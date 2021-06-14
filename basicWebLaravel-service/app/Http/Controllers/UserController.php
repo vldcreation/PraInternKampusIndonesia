@@ -7,10 +7,7 @@ use App\User;
 class UserController extends Controller
 {
     //
-    public function GetUsers(){
-        return response()->json(User::all(),200);
-    }
-
+    
     //just helper method
     public function getResponse(array $arr){
         $NTFOUND ='Not '.$arr[1].' Found';
@@ -25,19 +22,23 @@ class UserController extends Controller
         }
         else{
             if($arr[0]=='FS')
-                $dataJson = [
-                    'message' => $FAILED_SAVE
-                ];
+            $dataJson = [
+                'message' => $FAILED_SAVE
+            ];
             else if($arr[0]=='FD')
-                $dataJson = [
-                    'message' => $FAILED_DELETE
-                ];
+            $dataJson = [
+                'message' => $FAILED_DELETE
+            ];
             else if($arr[0]=='SD')
-                $dataJson = [
-                    'message' => $SUCCESS_DELETE
-                ];
+            $dataJson = [
+                'message' => $SUCCESS_DELETE
+            ];
         }
         return $dataJson;
+    }
+    
+    public function GetUsers(){
+        return response()->json(User::all(),200);
     }
 
     public function getUsersDetail($id){
@@ -63,7 +64,8 @@ class UserController extends Controller
     public function addUser(Request $request){
         $one = User::create(array_merge($request->all(),['password' => \Hash::make(strval(123456))]));
         if($one){
-            return response()->json($one,201);
+            return response()->json([$one
+            ],201);
         }
         return response()->json([
             'message'=>'Failed to save record'
