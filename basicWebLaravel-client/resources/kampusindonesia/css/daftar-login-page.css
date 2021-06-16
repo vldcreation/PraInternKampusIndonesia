@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&amp;display=swap');
+
+*{
+    font-family: Quicksand;
+}
+body {
+    overflow-x: hidden;
+    margin: 0;;
+}
+
+.menu {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 22.5px;
+    color: #002E6D;
+}
+
+#buttonDaftar{
+    border-radius: 50px;
+    border: none;
+    background: #14375E;
+    height: 33.33px;
+    width: 100px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+#button-container { 
+    position: absolute;
+    right: 130px;
+    padding: 10px;
+
+}
+#buttonMasuk {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 18px;
+    width: 56px;
+    height: 23px;
+    color: #002E6D;
+    border: none;
+    margin-right: 30px;
+    background: transparent;
+}
+
+.modal-content {
+    max-width: 780px;
+    width: 100%;
+    height: auto;
+    background: #F3F7FC;
+    border-radius: 10px;
+}
+
+h3 {
+    position: relative;
+    font-family: Quicksand;
+    font-style: normal;
+    color: #14375E;
+    font-weight: bold;
+}
+
+p {
+    color:#14375E;
+    font-style: normal;
+}
+
+.form-control{
+    height: 45px;
+}
+
+.socmed-login {
+    display: inline-block;
+    position: relative;
+}
+
+#btn-google {
+    width:352px; 
+    height:42px; 
+    border-radius:10px; 
+    background-color:#FFFF; 
+    color:#14375E;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+    border: 1px solid #CAE1FF;
+}
+
+#btn-facebook {
+    width:352px; 
+    height:42px; 
+    border-radius:10px; 
+    background-color:#FFFF; 
+    color:#14375E;
+    font-size: 16px;
+    font-family: Quicksand;
+    font-weight: bold;
+    border: 1px solid #CAE1FF;
+}
+
+.separator {
+    color:#2978E3; 
+    font-size:18px;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #CAE1FF;
+}
+
+#label-loginCheckbox {
+    color:#14375E; 
+    font-family:Quicksand;
+}
+
+#label-daftarCheckbox {
+    color:#14375E; 
+    font-family:Quicksand; 
+    font-size:13px;
+    font-weight: 500px;
+    line-height: 15px;
+}
+
+#btn-login {
+    border-radius:20px; 
+    width:130px;
+    background-color:#002E6D;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 22px;
+}
+
+#btn-daftar {
+    border-radius:20px; 
+    width:150px;
+    background-color:#002E6D;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: 500px;
+    line-height: 22px;
+}
+
+.group {
+    position: relative;
+}
+.fa {
+    position: absolute;
+    bottom: 15px;
+    float: right;
+    left: 720px;
+    cursor: pointer;
+    color:#14375E;
+    width: 20px;
+    height: 16px;
+    position: center;
+}
+ a {
+    text-decoration: none;
+}
+
+
+
+/* @media screen and (max-height: 600px) {
+     .modal-content {
+         margin-top: 0;
+         top: 10px;
+     }
+} */
