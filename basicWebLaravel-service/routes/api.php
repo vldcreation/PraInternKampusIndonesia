@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('user','UserController@getUsers');
 Route::get('user/{id}','UserController@getUsersDetail');
 Route::get('user/byEmail/{email}','UserController@getUsersByEmail');
+Route::get('user/byGoogleID/{googl_id}','UserController@getUsersByGoogleID');
 
 //POST API
 Route::post('addUser','UserController@addUser');

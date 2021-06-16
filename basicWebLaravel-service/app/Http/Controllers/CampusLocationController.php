@@ -40,7 +40,7 @@ class CampusLocationController extends Controller
     }
 
     public function getCL(){
-        return response()->json(CampusLocation::all(),200);
+        return response()->json(CampusLocation::all()->take(8),200);
     }
 
     public function getCLDetail($id){

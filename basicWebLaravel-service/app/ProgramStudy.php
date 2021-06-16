@@ -11,6 +11,6 @@ class ProgramStudy extends Model
     use Notifiable;
 
     protected $fillable = [
-        'id_campus','id_fakultas','nama','akreditas','deskripsi'
+        'id_campus','id_fakultas','nama','akreditasi','deskripsi'
     ];
 }

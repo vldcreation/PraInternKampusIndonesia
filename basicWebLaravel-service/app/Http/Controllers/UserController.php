@@ -61,8 +61,17 @@ class UserController extends Controller
         }
     }
 
+    public function getUsersByGoogleID($google_id){
+        $one = User::where('google_id',$google_id)->first();
+        if($one){
+            return response()->json($one,200);
+        }else{
+            return null;
+        }
+    }
+
     public function addUser(Request $request){
-        $one = User::create(array_merge($request->all(),['password' => \Hash::make(strval(123456))]));
+        $one = User::create(array_merge($request->all(),['password' => md5(strval(123456))]));
         if($one){
             return response()->json([$one
             ],201);
