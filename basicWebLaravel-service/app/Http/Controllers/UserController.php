@@ -10,7 +10,7 @@ class UserController extends Controller
     
     //just helper method
     public function getResponse(array $arr){
-        $NTFOUND ='Not '.$arr[1].' Found';
+        $NTFOUND =$arr[1].' Not Found';
         $FAILED_SAVE = 'Failed to save record';
         $FAILED_DELETE = 'Failed to delete record';
         $SUCCESS_DELETE = 'Record was deleted';
