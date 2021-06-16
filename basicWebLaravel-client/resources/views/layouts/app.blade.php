@@ -193,17 +193,17 @@
                             @csrf
                         <!-- Input name User  -->
                         <div class="form-group row mr-1 ml-1">
-                        <input type="text" class="form-control active" name="name" id="passwordUser" placeholder="Nama Lengkap">
+                        <input type="text" required class="form-control active" name="name" id="passwordUser" placeholder="Nama Lengkap">
                         <span id="blankMsg" style="color:red; font-size:13px; font-weight:bold;"></span>
                         </div>
                         <!-- Input Email User -->
                         <div class="form-group row mr-1 ml-1">
-                            <input type="email" class="form-control active" name="email" id="emailUser" placeholder="Alamat Email">
+                            <input type="email" required class="form-control active" name="email" id="emailUser" placeholder="Alamat Email">
                             <span id="blankMsg" style="color:red; font-size:13px; font-weight:bold;"></span>
                         </div>
                         <!-- Create a new password -->
                         <div class="form-group row mr-1 ml-1">
-                            <input type="password" class="form-control active" name="password" id="pswd1" placeholder="Password">
+                            <input type="password" required class="form-control active" name="password" id="pswd1" placeholder="Password">
                             <div class="group">
                                 <i id="show-password-user" class="fa fa-eye-slash"></i>
                             </div>

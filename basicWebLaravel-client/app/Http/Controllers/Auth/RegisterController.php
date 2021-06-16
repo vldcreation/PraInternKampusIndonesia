@@ -76,7 +76,7 @@ class RegisterController extends Controller
         ]);
         $newUser = Http::withHeaders([
             'SECRET_KEY' => 'secretKey',
-        ])->get('http://127.0.0.1:8000/api/user/byEmail/'.$request->input('name'))->json();
+        ])->get('http://127.0.0.1:8000/api/user/byEmail/'.$request->input('email'))->json();
         if((!empty($newUser))){
             $request->session()->put('email', $newUser['email']);
             $request->session()->put('status', true);
